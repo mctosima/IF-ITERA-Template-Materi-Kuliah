@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{quick\PYGZus{}sort}\PYG{p}{(}\PYG{n}{arr}\PYG{p}{):}
+    \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{arr}\PYG{p}{)} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{1}\PYG{p}{:} \PYG{k}{return} \PYG{n}{arr}
+    \PYG{n}{pivot} \PYG{o}{=} \PYG{n}{arr}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+    \PYG{n}{left} \PYG{o}{=} \PYG{p}{[}\PYG{n}{x} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n}{arr}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:]} \PYG{k}{if} \PYG{n}{x} \PYG{o}{\PYGZlt{}} \PYG{n}{pivot}\PYG{p}{]}
+    \PYG{n}{right} \PYG{o}{=} \PYG{p}{[}\PYG{n}{x} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n}{arr}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:]} \PYG{k}{if} \PYG{n}{x} \PYG{o}{\PYGZgt{}=} \PYG{n}{pivot}\PYG{p}{]}
+    \PYG{k}{return} \PYG{n}{quick\PYGZus{}sort}\PYG{p}{(}\PYG{n}{left}\PYG{p}{)} \PYG{o}{+} \PYG{p}{[}\PYG{n}{pivot}\PYG{p}{]} \PYG{o}{+} \PYG{n}{quick\PYGZus{}sort}\PYG{p}{(}\PYG{n}{right}\PYG{p}{)}
+\end{Verbatim}

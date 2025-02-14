@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} This is a sample Python function}
+\PYG{k}{def} \PYG{n+nf}{calculate\PYGZus{}factorial}\PYG{p}{(}\PYG{n}{n}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Calculate the factorial of a number\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{if} \PYG{n}{n} \PYG{o}{==} \PYG{l+m+mi}{0} \PYG{o+ow}{or} \PYG{n}{n} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{:}
+        \PYG{k}{return} \PYG{l+m+mi}{1}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{k}{return} \PYG{n}{n} \PYG{o}{*} \PYG{n}{calculate\PYGZus{}factorial}\PYG{p}{(}\PYG{n}{n} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Example usage}
+\PYG{n}{number} \PYG{o}{=} \PYG{l+m+mi}{5}
+\PYG{n}{result} \PYG{o}{=} \PYG{n}{calculate\PYGZus{}factorial}\PYG{p}{(}\PYG{n}{number}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Factorial of }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{number}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ is }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{result}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

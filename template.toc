@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Sample Section}{2}{0}{1}
+\beamer@sectionintoc {2}{Section Two}{6}{0}{2}
